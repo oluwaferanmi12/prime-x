@@ -24,3 +24,39 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  font-family: "valentiamo";
+  src: url("../assets/fonts/valentiamo/Valentiamo.otf");
+}
+
+@font-face {
+  font-family: "manrope-bold";
+  src: url("../assets/fonts/manrope/bold.otf");
+}
+
+@font-face {
+  font-family: "manrope-medium";
+  src: url("../assets/fonts/manrope/medium.otf");
+}
+
+@font-face {
+  font-family: "manrope-regular";
+  src: url("../assets/fonts/manrope/regular.otf");
+}
+
+@font-face {
+  font-family: "manrope-light";
+  src: url("../assets/fonts/manrope/light.otf");
+}
+
+@font-face {
+  font-family: "manrope-semibold";
+  src: url("../assets/fonts/manrope/semibold.otf");
+}
+
+@font-face {
+  font-family: "satoshi";
+  src: url("../assets/fonts/Satoshi-Variable.ttf");
+}
+
