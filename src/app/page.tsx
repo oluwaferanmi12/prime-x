@@ -4,10 +4,11 @@ import Image from "next/image";
 import { useState } from "react";
 import imageOne from "@/assets/images/car-1.png";
 import imageTwo from "@/assets/images/image-2.png";
-import imageThree from "@/assets/images/image-3.png";
+import imageThree from "@/assets/svgs/image-3.svg";
 import imageFour from "@/assets/images/image-4.png";
 import { SpaceWrapper } from "@/components/wrapper/space-wrapper";
 import driverIcon from "@/assets/svgs/driver.svg";
+import driverSeat from "@/assets/images/e7e5c27efa858572b8f25a93b8a71866c971bca1.jpg";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -68,7 +69,7 @@ export default function Home() {
           <div className="flex items-center gap-2 justify-center py-10">
             <Image src={imageOne} alt="" />
             <Image src={imageTwo} alt="" />
-            <Image src={imageTwo} alt="" />
+            <Image src={imageThree} alt="" />
             <Image src={imageFour} alt="" />
           </div>
         </div>
@@ -105,7 +106,7 @@ export default function Home() {
               </p>
             </button>
           </div>
-          <div className="mt-8 flex items-center gap-4">
+          <div className="mt-8 flex h-[680px] items-stretch gap-4">
             <div className="border w-full  bg-[#151715] flex justify-center items-center flex-col py-8  border-[#FFFFFF1A] rounded-[20px]">
               <p className="font-satoshi text-center text-white text-4xl">
                 The Luxury Experience
@@ -118,9 +119,24 @@ export default function Home() {
               <div className="my-8">
                 <Image src={driverIcon} alt="" />
               </div>
+
+              <div className="w-4/5 h-[300px] mx-auto flex justify-center relative mt-16 ">
+                <div className="bg-[#313431] absolute rounded-4xl z-50 top-15   w-full py-8 text-center text-2xl ">
+                  <p className="text-[#E0E0E0] font-satoshi">
+                    On-Demand Chauffeur Service
+                  </p>
+                </div>
+                <div className="bg-[#3C3E3C]  absolute top-12 w-[98%] mx-auto rounded-4xl z-40  py-8 text-center text-2xl "></div>
+                <div className="bg-[#464946] absolute top-9  w-[96%] mx-auto rounded-4xl z-30  py-8 text-center text-2xl "></div>
+                <div className="bg-[#575A57] absolute top-6  w-[94%]  mx-auto rounded-4xl z-20  py-8 text-center text-2xl "></div>
+              </div>
             </div>
-            <div className="w-full">
-              <Image alt="" src={imageThree} />
+            <div className="w-full h-full ">
+              <Image
+                alt=""
+                className="min-h-full rounded-[20px]"
+                src={driverSeat}
+              />
             </div>
           </div>
         </section>
