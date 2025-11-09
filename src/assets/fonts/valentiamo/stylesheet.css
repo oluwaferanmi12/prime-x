@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Valentiamo';
+    src: url('ValentiamoItalic-Italic.eot');
+    src: local('Valentiamo Italic Italic'), local('ValentiamoItalic-Italic'),
+        url('ValentiamoItalic-Italic.eot?#iefix') format('embedded-opentype'),
+        url('ValentiamoItalic-Italic.woff2') format('woff2'),
+        url('ValentiamoItalic-Italic.woff') format('woff'),
+        url('ValentiamoItalic-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Valentiamo';
+    src: url('Valentiamo-Regular.eot');
+    src: local('Valentiamo Regular'), local('Valentiamo-Regular'),
+        url('Valentiamo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Valentiamo-Regular.woff2') format('woff2'),
+        url('Valentiamo-Regular.woff') format('woff'),
+        url('Valentiamo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
