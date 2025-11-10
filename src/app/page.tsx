@@ -13,6 +13,12 @@ import ellipsisIcon from "@/assets/svgs/ellipsis-icon.svg";
 import { Col, Row } from "antd";
 import phoneScreen from "@/assets/svgs/phone-screen.svg";
 import carRounded from "@/assets/svgs/car-rounded.svg";
+import footerIcon from "@/assets/svgs/prime-x-footer.svg";
+import youtubeicon from "@/assets/svgs/youtube-icon.svg";
+import tiktokIcon from "@/assets/svgs/tikTok.svg";
+import linkedInIcon from "@/assets/svgs/linkedin.svg";
+import instagramIcon from "@/assets/svgs/instagram.svg";
+import facebookIcon from "@/assets/svgs/facebook.svg";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -23,6 +29,23 @@ export default function Home() {
     "Rolls Royce",
     "McLaren",
   ];
+  const firstList = [
+    "Company",
+    "Features",
+    "Pricing",
+    "About us",
+    "Contact",
+    "Pricing",
+  ];
+  const secondList = [
+    "Resource",
+    "Blog",
+    "Customer Stories",
+    "Information",
+    "Legal",
+    "Payments",
+  ];
+  const thirdList = ["Help", "Faq", "Help Center", "Support"];
   return (
     <>
       <LandingNav />
@@ -237,6 +260,80 @@ export default function Home() {
           </Row>
         </div>
       </SpaceWrapper>
+      <div className="bg-[#21221F] mt-12">
+        <SpaceWrapper>
+          <Row className="py-12">
+            <Col xs={12}>
+              <span>
+                <Image src={footerIcon} alt="" />
+              </span>
+              <div className="my-4">
+                <p className="text-[#E0E0E0] font-satoshi mb-2">
+                  lekki phase 1, lagos nigeria
+                </p>
+                <p className="text-[#E0E0E0] font-satoshi">(248) 823-3200</p>
+              </div>
+              <div className="flex items-center gap-3 mt-6">
+                <span>
+                  <Image src={youtubeicon} alt="" />
+                </span>
+                <span>
+                  <Image src={tiktokIcon} alt="" />
+                </span>
+                <span>
+                  <Image src={linkedInIcon} alt="" />
+                </span>
+                <span>
+                  <Image src={instagramIcon} alt="" />
+                </span>
+                <span>
+                  <Image src={facebookIcon} alt="" />
+                </span>
+              </div>
+            </Col>
+            <Col xs={12}>
+              <div className="flex items-stretch justify-between ">
+                <div className="flex flex-col gap-3 ">
+                  {firstList.map((item) => {
+                    return (
+                      <p
+                        key={item}
+                        className="text-[#E0E0E0] font-satoshi text-base"
+                      >
+                        {item}
+                      </p>
+                    );
+                  })}
+                </div>
+                <div className="flex flex-col gap-3 ">
+                  {secondList.map((item) => {
+                    return (
+                      <p
+                        key={item}
+                        className="text-[#E0E0E0] font-satoshi text-base"
+                      >
+                        {item}
+                      </p>
+                    );
+                  })}
+                </div>
+                <div className="flex flex-col gap-3 ">
+                  {thirdList.map((item) => {
+                    return (
+                      <p
+                        key={item}
+                        className="text-[#E0E0E0] font-satoshi text-base"
+                      >
+                        {item}
+                      </p>
+                    );
+                  })}
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </SpaceWrapper>
+      </div>
     </>
   );
 }
