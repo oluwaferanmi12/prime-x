@@ -332,6 +332,15 @@ export default function Home() {
               </div>
             </Col>
           </Row>
+          <div className="py-4 border-t border-t-[#EDEDED33] py-8 flex justify-between items-center">
+            <p className="font-satoshi text-[#3C3C3B]">
+              © Copyright 2025, All Rights Reserved
+            </p>
+            <div className="flex items-center gap-3">
+              <p className="font-satoshi text-[#3C3C3B]">Term of Service</p>
+              <p className="font-satoshi text-[#3C3C3B]">Privacy Policy</p>
+            </div>
+          </div>
         </SpaceWrapper>
       </div>
     </>
