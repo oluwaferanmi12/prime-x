@@ -8,7 +8,11 @@ import imageThree from "@/assets/svgs/image-3.svg";
 import imageFour from "@/assets/images/image-4.png";
 import { SpaceWrapper } from "@/components/wrapper/space-wrapper";
 import driverIcon from "@/assets/svgs/driver.svg";
-import driverSeat from "@/assets/images/e7e5c27efa858572b8f25a93b8a71866c971bca1.jpg";
+import arrowBg from "@/assets/svgs/arrow-bg.svg";
+import ellipsisIcon from "@/assets/svgs/ellipsis-icon.svg";
+import { Col, Row } from "antd";
+import phoneScreen from "@/assets/svgs/phone-screen.svg";
+import carRounded from "@/assets/svgs/car-rounded.svg";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -131,15 +135,107 @@ export default function Home() {
                 <div className="bg-[#575A57] absolute top-6  w-[94%]  mx-auto rounded-4xl z-20  py-8 text-center text-2xl "></div>
               </div>
             </div>
-            <div className="w-full h-full ">
-              <Image
-                alt=""
-                className="min-h-full rounded-[20px]"
-                src={driverSeat}
-              />
+            <div className="w-full h-full seatBg flex items-center flex-col justify-end">
+              <div className="flex flex-col items-center gap-2 text-white">
+                <p className="text-3xl font-satoshi">
+                  Our Services and Support
+                </p>
+                <p className="w-[60%] mx-auto text-center font-satoshi">
+                  We offer a range of services and support to ensure your
+                  cycling experience is smooth and enjoyable
+                </p>
+                <button className="flex items-center mt-4 backdrop-blur-2xl bg-[#FFFFFF4D] px-4 py-2 rounded-full  justify-center gap-2">
+                  <p className="font-satoshi">Get Started</p>
+                  <span>
+                    <Image className="w-11 h-11" src={arrowBg} alt="" />
+                  </span>
+                </button>
+                <div className="my-4">
+                  <span>
+                    <Image src={ellipsisIcon} alt="" />
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
+      </SpaceWrapper>
+      <SpaceWrapper>
+        <Row align={"middle"} className="bg-[#E3CA9F] mt-20 rounded-[20px] ">
+          <Col xs={12}>
+            <div className="flex flex-col items-start justify-center pl-12">
+              <p className="text-[64px] font-valentiamo">
+                Luxury Without <br /> the Hassle
+              </p>
+              <p className="text-lg font-satoshi my-4 w-3/5">
+                Your time is precious. Let every journey reflect your status.
+              </p>
+              <button className="bg-black rounded-full px-6 py-4 mt-6">
+                <p className="text-base text-white">Join the waitlist</p>
+              </button>
+            </div>
+          </Col>
+          <Col xs={12}>
+            <div className="flex items-end justify-center pt-8">
+              <Image src={phoneScreen} alt="" />
+            </div>
+          </Col>
+        </Row>
+      </SpaceWrapper>
+
+      <SpaceWrapper>
+        <div className="mt-12 bg-[#2D312D] flex flex-col items-center py-12 rounded-4xl">
+          <p className="font-manrope-regular text-[#D8D8D8] text-3xl w-3/5 mx-auto text-center">
+            Prime X is not just a ride—it is a statement. Designed exclusively
+            for{" "}
+            <span className="text-[#BC9E69]">High-Net-Worth Individuals</span> ,
+            diplomats, and business leaders,
+          </p>
+          <div className="my-20">
+            <span>
+              <Image src={carRounded} alt="" />
+            </span>
+          </div>
+          <Row justify={"center"} align={"middle"} className="w-full px-20">
+            <Col xs={20}>
+              <Row justify={"center"} align={"middle"}>
+                <Col xs={8}>
+                  <div>
+                    <p className="text-[#BC9E69]  font-manrope-medium text-lg mb-2">
+                      Unmatched Exclusivity{" "}
+                    </p>
+                    <p className="text-[#D8D8D8] text-base w-3/5">
+                      {" "}
+                      A concierge service reserved for the elite
+                    </p>
+                  </div>
+                </Col>
+                <Col xs={8}>
+                  <div>
+                    <p className="text-[#BC9E69]  font-manrope-medium text-lg mb-2">
+                      Security and Discretion{" "}
+                    </p>
+                    <p className="text-[#D8D8D8] text-base w-3/5">
+                      {" "}
+                      A concierge service reserved for the elite
+                    </p>
+                  </div>
+                </Col>
+                <Col xs={8}>
+                  <div>
+                    <p className="text-[#BC9E69]  font-manrope-medium text-lg mb-2">
+                      Security and Discretion{" "}
+                    </p>
+                    <p className="text-[#D8D8D8] text-base w-3/5">
+                      {" "}
+                      A concierge service reserved for the elite
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </div>
       </SpaceWrapper>
     </>
   );

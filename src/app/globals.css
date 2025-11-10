@@ -35,6 +35,17 @@
   src: url("../assets/fonts/Satoshi-Variable.ttf");
 }
 
+.seatBg {
+  background-image: url("../assets/images/e7e5c27efa858572b8f25a93b8a71866c971bca1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
 .heroBg {
   background-image: url("../assets/svgs/heroBg.svg");
   background-repeat: no-repeat;
@@ -44,10 +55,10 @@
   height: 100%;
 }
 
-@theme inline{
+@theme inline {
   --font-valentiamo: "valentiamo";
-  --font-manrope-bold: 'manrope-bold';
-  --font-manrope-medium: 'manrope-medium';
+  --font-manrope-bold: "manrope-bold";
+  --font-manrope-medium: "manrope-medium";
   --font-manrope-regular: "manrope-regular";
   --font-manrop-light: "manrope-light";
   --font-manrope-semibold: "manrope-semibold";
